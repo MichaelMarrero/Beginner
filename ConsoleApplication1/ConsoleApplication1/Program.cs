@@ -38,6 +38,17 @@ namespace ConsoleApplication1
                     keepGoing = false;
                 }
 
+                if (action == "Nothing")
+                {
+                    Console.WriteLine(" You must be bored!");
+                   
+                }
+
+                if (action == "Going Outside")
+                {
+                    Console.WriteLine("Good Choice!");
+                }
+
             }
             while (keepGoing);
             
