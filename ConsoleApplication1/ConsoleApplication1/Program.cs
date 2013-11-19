@@ -13,6 +13,8 @@ namespace ConsoleApplication1
             Console.WriteLine("What is your name?");
             var name = Console.ReadLine();
 
+
+            
             var randomizer = new Random();
             var choice = randomizer.Next(1, 10);
             if (choice == 1)
@@ -24,7 +26,21 @@ namespace ConsoleApplication1
                 Console.WriteLine("Hello " + name + " How are you?");
             }
 
-            Console.ReadLine();
+            bool keepGoing = true;
+
+            do
+            {
+                Console.WriteLine(" What would you like to do today?");
+                var action = Console.ReadLine();
+
+                if (action == "goodbye") 
+                {
+                    keepGoing = false;
+                }
+
+            }
+            while (keepGoing);
+            
                 
         }
     }
